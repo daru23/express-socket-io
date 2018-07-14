@@ -1,0 +1,35 @@
+{
+  "name": "express-socket-io",
+  "version": "1.0.0",
+  "description": "NodeJs server using express and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js index.js  ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daru23/express-socket-io.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "express",
+    "sockets",
+    "socket",
+    "socket.io"
+  ],
+  "author": "Daniela Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daru23/express-socket-io/issues"
+  },
+  "homepage": "https://github.com/daru23/express-socket-io#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.2"
+  }
+}

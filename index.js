@@ -1,7 +1,9 @@
-let express = require('express');
-let app = express();
+const express = require('express');
+const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
+
+let config = './config.json';
 
 app.get('/', function (req, res) {
     res.send('Hello World!');
@@ -16,8 +18,5 @@ function onConnection(socket){
 
 io.on('connection', onConnection);
 
-// app.listen(3000, function () {
-//     console.log('Example app listening on port 3000!');
-// });
 
-http.listen(9090, () => console.log('listening on port ' + 9090));
+http.listen(config.port, () => console.log('listening on port ' + config.port));

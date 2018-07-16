@@ -3,7 +3,7 @@ const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
-let config = './config.json';
+let config = require('./config.json');
 
 app.get('/', function (req, res) {
     res.send('Hello World!');

@@ -2,7 +2,5 @@
   "app_type": "node",
   "startup_file": "index.js",
   "environment": "production",
-  "port": 80,
-  "daemonize": true,
-  "user": "git-user"
+  "port": 9090
 }

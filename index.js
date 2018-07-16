@@ -3,7 +3,7 @@ const app = express();
 const fs = require('fs');
 const https = require('https');
 const http = require('http').Server(app);
-const io = require('socket.io')(http);
+const io = require('socket.io')(https);
 
 let config = require('./config.json');
 let httpsOptions = {

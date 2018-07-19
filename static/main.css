@@ -56,7 +56,7 @@
 .mouse-tracker {
     position: relative;
     height: 200px;
-    border: solid 1px grey;
+    border: solid 1px #dddddd;
     border-radius: 4px;
 }
 
@@ -65,12 +65,16 @@
 }
 
 .block-spacer {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .game-box-size {
     width: 600px;
     margin: 20px;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .circle {
@@ -100,4 +104,17 @@
     padding: 10px;
     opacity: .2;
     z-index: 9;
+}
+
+.rotate {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 }

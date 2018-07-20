@@ -62,6 +62,11 @@ typings/
 
 # IDE
 .idea/
+.DS_Store
 
 #package-lock.json
 package-lock.json
+
+# certificates
+localhost.crt
+localhost.key
